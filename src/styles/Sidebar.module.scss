@@ -4,7 +4,13 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Align logo at top, links in middle, and footer at bottom */
+    justify-content: space-between;
+    transition: width 0.3s ease;
+  
+    @media (max-width: 768px) {
+      width: 60px;
+      padding: 10px;
+    }
   }
   
   .logo {
@@ -12,7 +18,12 @@
     margin-bottom: 30px;
   
     img {
-      width: 100px; /* Adjust the logo size */
+      width: 100px;
+      transition: width 0.3s ease;
+  
+      @media (max-width: 768px) {
+        width: 40px;
+      }
     }
   }
   
@@ -20,24 +31,28 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    flex-grow: 1; /* Allow the nav links to grow and center vertically */
-    justify-content: center; /* Vertically center the nav links */
-  }
+    flex-grow: 1;
+    justify-content: center;
   
-  .navLink {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    .navLink {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
   
-    &:hover {
-      color: #bdc3c7;
-    }
+      i {
+        font-size: 20px;
+      }
   
-    i {
-      font-size: 20px;
+      @media (max-width: 768px) {
+        font-size: 0;
+        justify-content: center;
+        i {
+          font-size: 24px;
+        }
+      }
     }
   }
   
@@ -48,5 +63,10 @@
   
     p {
       font-size: 14px;
+  
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
+  
