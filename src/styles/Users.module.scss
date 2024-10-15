@@ -1,6 +1,32 @@
 .users {
   h1 {
-    font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .userList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; 
+  }
+
+  .userCard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      strong {
+        color: #2c3e50;
+      }
+    }
   }
 }
