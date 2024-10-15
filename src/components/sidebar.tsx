@@ -20,7 +20,7 @@ const Sidebar: React.FC = () => (
       </Link>
     </nav>
     <footer className={styles.footer}>
-      <p>Copyright: Tessa Nikander</p>
+    <p>{'\u00A9'} 2024 Tessa Nikander</p>
     </footer>
   </div>
 );
