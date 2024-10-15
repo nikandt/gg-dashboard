@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Users.module.scss';
 import { FaSearch } from 'react-icons/fa';
+import { Button, Card, CardContent, Typography } from '@mui/material';
 
 type User = {
   id: number;
@@ -80,29 +81,41 @@ const Users: React.FC = () => {
         </div>
         <div className={styles.sortBy}>
           <p>Sort by:</p>
-          <button
+          <Button
+            variant="contained"
+            color="primary"
             onClick={() => handleSort('name')}
-            className={sortBy === 'name' ? styles.active : ''}
           >
             Name {isAscending && sortBy === 'name' ? '▲' : '▼'}
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="contained"
+            color="primary"
             onClick={() => handleSort('email')}
-            className={sortBy === 'email' ? styles.active : ''}
           >
             Email {isAscending && sortBy === 'email' ? '▲' : '▼'}
-          </button>
+          </Button>
         </div>
       </div>
       <div className={styles.userList}>
-        {filteredUsers.map((user) => (
-          <div className={styles.userCard} key={user.id}>
-            <h2>{user.name}</h2>
-            <p><strong>Email:</strong> {user.email}</p>
-            <p><strong>Phone:</strong> {user.phone}</p>
-            <p><strong>Website:</strong> {user.website}</p>
-            <p><strong>Address:</strong> {user.address.street}, {user.address.city}</p>
-          </div>
+      {filteredUsers.map((user) => (
+          <Card className={styles.userCard} key={user.id}>
+            <CardContent>
+              <Typography variant="h5">{user.name}</Typography>
+              <Typography variant="body2">
+                <strong>Email:</strong> {user.email}
+              </Typography>
+              <Typography variant="body2">
+                <strong>Phone:</strong> {user.phone}
+              </Typography>
+              <Typography variant="body2">
+                <strong>Website:</strong> {user.website}
+              </Typography>
+              <Typography variant="body2">
+                <strong>Address:</strong> {user.address.street}, {user.address.city}
+              </Typography>
+            </CardContent>
+          </Card>
         ))}
       </div>
     </div>
