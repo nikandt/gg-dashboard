@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './routes/Home';
-import logo from './assets/logo.svg';
+
 import Users from './routes/Users';
-import Sidebar from './components/sidebar'; // Import Sidebar
+import Sidebar from './components/sidebar';
+import Header from './components/header';
 import styles from './styles/App.module.scss';
+
 
 
 const App: React.FC = () => {

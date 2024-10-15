@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.svg';
 import styles from '../styles/Sidebar.module.scss';
+import logo from '../assets/generic.png';
 
 const Sidebar: React.FC = () => (
   <div className={styles.sidebar}>
     <div className={styles.logo}>
-      <img src={logo} alt="Logo" />
+      <img 
+        src={logo}
+      />
     </div>
     <nav className={styles.navLinks}>
       <Link to="/" className={styles.navLink}>
@@ -20,7 +22,7 @@ const Sidebar: React.FC = () => (
       </Link>
     </nav>
     <footer className={styles.footer}>
-    <p>{'\u00A9'} 2024 Tessa Nikander</p>
+      <p>© 2024 Tessa Nikander</p>
     </footer>
   </div>
 );
