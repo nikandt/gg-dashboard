@@ -1,14 +1,13 @@
 # GG Dashboard
 
-This project is a responsive React+TS demo that features user listing with search and sort functionalities, a sidebar for navigation, and a simple styling using Material-UI components. The application was built using CRA.
+This project is a responsive React+TS demo that features user listing with search and sort functionalities, a sidebar for navigation, and a simple styling using Material-UI components. The application was built using (CRA)[https://create-react-app.dev/].
 
 ## Features
 
 - **User Listing**: Displays a list of users fetched from the https://jsonplaceholder.typicode.com/users REST API.
-  - **Search**: Allows users to search by name.
+  - **Search**: Allows admins to search users by name
   - **Sort**: Users can sort by last name or email, with toggleable ascending/descending functionality.
 - **Responsive Design**: The app adapts to different screen sizes (mobile, tablet, desktop).
-  - The search bar is displayed on its own row on mobile.
 - **Sidebar Navigation**: A sidebar provides navigation between pages (ie. Home, Users, Settings).
 - **Material-UI Integration**: Material-UI is used for buttons, cards, and other UI elements
 
@@ -54,4 +53,4 @@ A: It was 3am in the morning
 
 ## Contributions
 
-Lol no
+Nope
