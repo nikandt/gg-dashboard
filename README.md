@@ -1,46 +1,57 @@
-# Getting Started with Create React App
+# GG Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a responsive React+TS demo that features user listing with search and sort functionalities, a sidebar for navigation, and a simple styling using Material-UI components. The application was built using CRA.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Listing**: Displays a list of users fetched from the https://jsonplaceholder.typicode.com/users REST API.
+  - **Search**: Allows users to search by name.
+  - **Sort**: Users can sort by last name or email, with toggleable ascending/descending functionality.
+- **Responsive Design**: The app adapts to different screen sizes (mobile, tablet, desktop).
+  - The search bar is displayed on its own row on mobile.
+- **Sidebar Navigation**: A sidebar provides navigation between pages (ie. Home, Users, Settings).
+- **Material-UI Integration**: Material-UI is used for buttons, cards, and other UI elements
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Core Dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
-### `npm test`
+### Other Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Material-UI**: A popular React UI framework for building beautiful applications.
+- **Sass (SCSS)**: A CSS preprocessor that allows for more structured and modular styles.
+- **react-router-dom**: A library for routing and navigation in React applications.
+- **react-icons**: Provides icons (used in the sidebar) for navigation links.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the following command to install all necessary packages:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## FAQ
 
-### `npm run eject`
+**Q: Why does the app fetch the user's IP address?**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A: Just to demonstrate dashboard personalisation and the use of external APIs
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Q: How would you optimize the performance of the app?**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+A: By preventing unnecessary re-renders by using React hooks such as `useMemo` and `useCallback`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Q: What does "GG" stand for?**
 
-## Learn More
+A: Good game, Get Gas, or Grotesque Garments. Pick your poison
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Q: Why did you mix pre-built elements with raw elements?**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A: It was 3am in the morning
+
+## Contributions
+
+Lol no
